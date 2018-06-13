@@ -5,3 +5,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
+typedef struct TREE {
+  int value;
+  struct TREE *left;
+  struct TREE *right;
+}tree;
+
+#include "funcoes/todas.h"
+
+int main() {
+
+
+
+
+
+
+  return 0;
+}

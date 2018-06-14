@@ -40,7 +40,7 @@ int main() {
         //searchValue(arvore,valor);
         break;
       case 5:
-        int getHeight(TREE *arvore);
+        int h = int getHeight(arvore);
         break;
       case 6:
         //leValor(&valor);

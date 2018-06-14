@@ -40,7 +40,9 @@ int main() {
         //searchValue(arvore,valor);
         break;
       case 5:
+        ;
         int h = getHeight(arvore);
+        printf("A altura da arvore e %d",h);
         break;
       case 6:
         //leValor(&valor);

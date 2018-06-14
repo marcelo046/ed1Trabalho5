@@ -7,6 +7,7 @@ tree* insereArvore(tree *arvore,int valor){
   novo->right = NULL;
   if(arvore == NULL){
     arvore = novo;
+    return novo;
   }
   else{
     while(aux != NULL){
@@ -20,10 +21,11 @@ tree* insereArvore(tree *arvore,int valor){
       }
     }
     if(valor > ant->value){
-      ant->right = aux;
+      ant->right = novo;
     }
     else{
-      ant->left = aux;
+      ant->left = novo;
     }
   }
+  return arvore;
 }

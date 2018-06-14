@@ -6,7 +6,7 @@ tree* loadTreeFromFile(tree *arvore,char *caminho){
 
   if ((p_arq=fopen(caminho,"r"))==NULL)
   {
-      limpaTela();
+      limparTela();
       printf("nao foi possivel encontrar a arvore\n\n\n\n");
       return NULL;
   }

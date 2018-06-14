@@ -1,6 +1,7 @@
 int mostraMenu(){
     int opcao;
     limparTela();
+    printf("\n");
     printf(" ========================================\n");
     printf("|         >>>>>>>>> Menu <<<<<<<<<       |\n");
     printf("| 1 - Carregar arvore de arquivo         |\n");

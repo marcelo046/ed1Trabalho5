@@ -16,8 +16,8 @@ typedef struct TREE {
 
 int main() {
   char caminho[16];
-  tree *arvore = (tree*)malloc(sizeof(tree));
-  int opcao,valor;
+  tree *arvore = NULL;
+  int opcao,valor,h;
   do
   {
     opcao = mostraMenu();
@@ -41,7 +41,7 @@ int main() {
         break;
       case 5:
         ;
-        int h = getHeight(arvore) - 1; // lembrar q ta sempre passando em 1 da altura
+        h = getHeight(arvore) - 1; // lembrar q ta sempre passando em 1 da altura
         printf("A altura da arvore e %d",h);
         break;
       case 6:
@@ -55,7 +55,9 @@ int main() {
         //printPreOrder(arvore);
         break;
       case 9:
-      printPostOrder(arvore);
+        printf("essa eh a arvore\n\n");
+        printPostOrder(arvore);
+        pausar();
         break;
       case 10:
         //if(!verificaBalanceada(arvore)) // Retorna um int, 0 = nao balanceada, 1 = balanceada

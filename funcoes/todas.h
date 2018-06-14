@@ -7,3 +7,6 @@
 #include "leCaminhoArquivo.h"
 #include "insereArvore.h"
 #include "loadTreeFromFile.h"
+#include "printInOrder.h"
+#include "printInOrder.h"
+#include "printInOrder.h"

@@ -41,7 +41,7 @@ int main() {
         break;
       case 5:
         ;
-        int h = getHeight(arvore);
+        int h = getHeight(arvore) - 1; // lembrar q ta sempre passando em 1 da altura
         printf("A altura da arvore e %d",h);
         break;
       case 6:
@@ -52,7 +52,7 @@ int main() {
         //printInOrder(arvore);
         break;
       case 8:
-        printPreOrder(arvore);
+        //printPreOrder(arvore);
         break;
       case 9:
         //printPostOrder(arvore);

@@ -11,12 +11,11 @@ tree* insereArvore(tree *arvore,int valor){
   }
   else{
     while(aux != NULL){
+      ant = aux;
       if(valor > aux->value){
-        ant = aux;
         aux = aux->right;
       }
       else{
-        ant = aux;
         aux = aux->left;
       }
     }

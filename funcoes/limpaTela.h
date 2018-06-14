@@ -1,3 +1,0 @@
-void limpaTela() {
-  system("clear");
-}

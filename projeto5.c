@@ -13,6 +13,7 @@ typedef struct TREE {
 }tree;
 
 #include "funcoes/todas.h"
+
 int main() {
   char caminho[16];
   tree *arvore = (tree*)malloc(sizeof(tree));
@@ -20,7 +21,7 @@ int main() {
   do
   {
     opcao = mostraMenu();
-    limpaTela();
+    limparTela();
     switch(opcao)
     {
       case 1:

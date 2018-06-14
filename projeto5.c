@@ -49,13 +49,13 @@ int main() {
         //removeValue(arvore,valor);
         break;
       case 7:
-        //printInOrder(arvore);
+      //printInOrder(arvore);
         break;
       case 8:
         //printPreOrder(arvore);
         break;
       case 9:
-        //printPostOrder(arvore);
+      printPostOrder(arvore);
         break;
       case 10:
         //if(!verificaBalanceada(arvore)) // Retorna um int, 0 = nao balanceada, 1 = balanceada

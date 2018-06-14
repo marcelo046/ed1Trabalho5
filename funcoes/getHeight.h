@@ -1,4 +1,5 @@
-int getHeight(TREE *arvore){
+int getHeight(TREE *arvore)
+{
   if(arvore == NULL)
   return 0;
   if(*arvore == NULL)

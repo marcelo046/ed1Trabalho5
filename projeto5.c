@@ -52,7 +52,7 @@ int main() {
         //printInOrder(arvore);
         break;
       case 8:
-        //printPreOrder(arvore);
+        printPreOrder(arvore);
         break;
       case 9:
         //printPostOrder(arvore);

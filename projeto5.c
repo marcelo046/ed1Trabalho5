@@ -49,10 +49,10 @@ int main() {
         //removeValue(arvore,valor);
         break;
       case 7:
-      //printInOrder(arvore);
+        printInOrder(arvore);
         break;
       case 8:
-        //printPreOrder(arvore);
+        printPreOrder(arvore);
         break;
       case 9:
         printf("essa eh a arvore\n\n");

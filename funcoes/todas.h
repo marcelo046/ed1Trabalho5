@@ -9,3 +9,5 @@
 #include "insereArvore.h"
 #include "loadTreeFromFile.h"
 #include "printPostOrder.h"
+#include "printPreOrder.h"
+#include "printInOrder.h"

@@ -4,6 +4,6 @@ void printPostOrder(tree *arvore)
   {
     printPostOrder(arvore->left);
     printPostOrder(arvore->right);
-    printf("%i\n", arvore->value);
+    printf("%d\n", arvore->value);
   }
 }

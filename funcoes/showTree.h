@@ -47,10 +47,14 @@ void showTree(tree *arvore,int altura) {
         atual++;
     }
     atual = 1;
-    i = 0;
-    j = 0;
-    numNivel = 1;
-    espacos = 10;
+    i = 1;
+    j = 1;
+    numNivel = 2;
+    espacos = 35;
+    for(cont = 0;cont < espacos+1;cont++){
+      printf(" ");
+    }
+    printf("%d\n",ordem[0]);
     do{
       for(cont = 0;cont < espacos;cont++){
         printf(" ");
@@ -60,25 +64,33 @@ void showTree(tree *arvore,int altura) {
           if(ordem[j] != 0)
             printf("/ ");
           else
-            printf("  ");
+            printf("   ");
         }
         if(j % 2 == 0){
           if(ordem[j] != 0)
-            printf(" | ");
+            printf(" \\  ");
           else
-            printf("  ");
+            printf("   ");
         }
         j++;
       }
       printf("\n");
-      for(cont = 0;cont < espacos;cont++){
+      for(cont = 0;cont < espacos-1;cont++){
         printf(" ");
       }
       for(cont = 0;cont < numNivel;cont++){
-        if(ordem[i] != 0)
-          printf("%d ",ordem[i]);
-        else
-          printf("  ");
+        if(i % 2 == 1){
+          if(ordem[i] != 0)
+            printf("%d  ",ordem[i]);
+          else
+            printf("   ");
+        }
+        if(i % 2 == 0){
+          if(ordem[i] != 0)
+            printf("%d  ",ordem[i]);
+          else
+            printf("   ");
+        }
         i++;
       }
       printf("\n");

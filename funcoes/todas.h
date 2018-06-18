@@ -14,3 +14,7 @@
 #include "leValor.h"
 #include "searchValue.h"
 #include "showTree.h"
+#include "pegaAlturaNo.h"
+#include "freeArvore.h"
+#include "contaElementos.h"
+#include "isFull.h"

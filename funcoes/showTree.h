@@ -2,7 +2,7 @@ void showTree(tree *arvore,int altura) {
     tree *aux = arvore;
     int elementos = (pow(2,altura));
     elementos--;
-    int ordem[elementos],i = 0,atual = 0;
+    int ordem[elementos],i = 0,atual = 0,numNivel ,cont,j,espacos;
     if (aux == NULL){
       printf("Nao ha arvore carregada\n");
       return;
@@ -46,4 +46,44 @@ void showTree(tree *arvore,int altura) {
         }
         atual++;
     }
+    atual = 1;
+    i = 0;
+    j = 0;
+    numNivel = 1;
+    espacos = 10;
+    do{
+      for(cont = 0;cont < espacos;cont++){
+        printf(" ");
+      }
+      for(cont = 0;cont < numNivel;cont++){
+        if(j % 2 == 1){
+          if(ordem[j] != 0)
+            printf("/ ");
+          else
+            printf("  ");
+        }
+        if(j % 2 == 0){
+          if(ordem[j] != 0)
+            printf(" | ");
+          else
+            printf("  ");
+        }
+        j++;
+      }
+      printf("\n");
+      for(cont = 0;cont < espacos;cont++){
+        printf(" ");
+      }
+      for(cont = 0;cont < numNivel;cont++){
+        if(ordem[i] != 0)
+          printf("%d ",ordem[i]);
+        else
+          printf("  ");
+        i++;
+      }
+      printf("\n");
+      numNivel = 2*numNivel;
+      atual++;
+      espacos = espacos - 2;
+    }while(i < elementos);
 }

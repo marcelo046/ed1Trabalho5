@@ -27,7 +27,7 @@ int main() {
     switch(opcao)
     {
       case 1:
-        //freeArvore(l); // verificar se ela ja n esta vazia antes plz
+        arvore = freeArvore(arvore);
         leCaminhoArquivo(caminho);
         arvore = loadTreeFromFile(arvore,caminho);
         break;
@@ -38,7 +38,9 @@ int main() {
         pausar();
         break;
       case 3:
-        //isFull(arvore);
+        isFull(arvore);
+        scanf("%c", &lixo);
+        pausar();
         break;
       case 4:
         leValor(&valor);
@@ -49,7 +51,7 @@ int main() {
         }
         else if(aux->value == valor){
           printf("No solicitado: %d\n",aux->value);
-          printf("Altura do no: Depois fazer a funcao\n");
+          printf("Altura do no: %d\n",pegaAlturaNo(arvore,valor));
           printf("O valor pedido e o inicio da arvore e nao possui pai ou irmaos\n");
         }
         else{
@@ -57,7 +59,7 @@ int main() {
           if(aux->left != NULL){
             if(aux->left->value == valor){
               printf("%d\n",aux->left->value);
-              printf("Altura do no: Depois fazer a funcao\n");
+              printf("Altura do no: %d\n",pegaAlturaNo(arvore,valor));
               printf("O valor do seu pai e %d e ",aux->value);
               if(aux->right != NULL)
                 printf("o valor do seu irmao e %d\n",aux->right->value);
@@ -68,7 +70,7 @@ int main() {
           if(aux->right != NULL){ // e o no da direita
             if(aux->right->value == valor){
               printf("%d\n",aux->right->value);
-              printf("Altura do no: Depois fazer a funcao\n");
+              printf("Altura do no: %d\n",pegaAlturaNo(arvore,valor));
               printf("O valor do seu pai e %d e ",aux->value);
               if(aux->left != NULL)
                 printf("o valor do seu irmao e %d\n",aux->left->value);
@@ -109,8 +111,7 @@ int main() {
           //balanceTree(arvore);
         break;
       case 0:
-        //freeArvore(l);
-        ;
+        arvore = freeArvore(arvore);
     }
   }while(opcao != 0);
   return 0;

@@ -4,7 +4,7 @@ void isFull(tree *arvore){
   int elementos = 0;
   contaElementos(arvore,&elementos);
   if(elementos == elementosMax)
-    printf("A arvore e cheia\n",elementos);
+    printf("A arvore e cheia\n");
   else
-    printf("A arvore nao e cheia\n",elementos);
+    printf("A arvore nao e cheia\n");
 }

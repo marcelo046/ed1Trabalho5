@@ -2,7 +2,8 @@
 tree * removeValue(tree * arvore, int valor) {
   tree *aux = arvore;
   tree *ant;
-  tree *folha;
+  tree *folha,*antFolha;
+  int temp;
 
   if (arvore == NULL) {
     printf("arvore esta vazia!\n");
@@ -51,15 +52,28 @@ tree * removeValue(tree * arvore, int valor) {
     free(aux);
   }
   //caso o No tiver 2 filhos
+  // if (aux->left != NULL && aux->right != NULL) {
+  //   folha = aux->right;
+  //   while (folha->left == NULL || folha->right == NULL) {
+  //     folha = aux->left;
+  //   }
+  //   aux->value = folha->value;
+  //   arvore = removeValue(arvore, folha->value);
+  //   printf("removido do meio\n");
+  //   pausar();
+  // }
   if (aux->left != NULL && aux->right != NULL) {
     folha = aux->right;
-    while (folha->left == NULL || folha->right == NULL) {
-      folha = aux->left;
+    antFolha = aux;
+    while (folha->left != NULL) {
+      antFolha = folha;
+      folha = folha->left;
     }
-    aux->value = folha->value;
+    temp = folha->value;
     arvore = removeValue(arvore, folha->value);
-    printf("removido do meio\n");
-    pausar();
+    aux->value = temp;
+    //printf("removido do meio\n");
+    //pausar();
   }
   return arvore;
 }

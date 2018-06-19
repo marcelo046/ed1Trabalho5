@@ -85,8 +85,8 @@ int main() {
         printf("A altura da arvore e %d",h);
         break;
       case 6:
-        //leValor(&valor);
-        //removeValue(arvore,valor);
+        leValor(&valor);
+        removeValue(arvore, valor);
         break;
       case 7:
         printInOrder(arvore);

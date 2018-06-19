@@ -8,6 +8,7 @@ tree* loadTreeFromFile(tree *arvore,char *caminho){
   {
       limparTela();
       printf("nao foi possivel encontrar a arvore\n\n\n\n");
+      pausar();
       return NULL;
   }
   else

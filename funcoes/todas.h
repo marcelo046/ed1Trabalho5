@@ -11,6 +11,7 @@
 #include "printPostOrder.h"
 #include "printPreOrder.h"
 #include "printInOrder.h"
+#include "balanceTree.h"
 #include "leValor.h"
 #include "searchValue.h"
 #include "showTree.h"

@@ -88,7 +88,7 @@ int main() {
         break;
       case 6:
         leValor(&valor);
-        removeValue(arvore, valor);
+        arvore = removeValue(arvore, valor);
         break;
       case 7:
         printInOrder(arvore);

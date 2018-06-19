@@ -1,13 +1,15 @@
+int maior(int x, int y)
+{
+  if (x > y)
+   return x;
+  else
+   return y;
+}
+
 void balanceTree(tree* arvore)
 {
   int altura = getHeight(arvore);
-  int maior(int x, int y)
-  {
-    if (x > y)
-     return x;
-     else
-     return y;
-  }
+
 //balance pera esquerda
   tree* no;
   no = arvore->left;

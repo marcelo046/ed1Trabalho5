@@ -26,5 +26,22 @@ tree * removeValue(tree * arvore, int valor) {
     free(aux);
   }
 
+  // caso o No tiver filho a esquerda
+  if (aux->left != NULL && aux->right == NULL) {
+    if (ant->value > valor)
+      ant->left = aux->left;
+    else
+      ant->right = aux->left;
+    free(aux);
+  }
+  // caso o No tiver filho a direita
+  if (aux->left == NULL && aux->right != NULL) {
+    if (ant->value > valor)
+      ant->left = aux->right;
+    else
+      ant->right = aux->right;
+    free(aux);
+  }
+  //****************
   return arvore;
 }

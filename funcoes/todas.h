@@ -18,3 +18,4 @@
 #include "freeArvore.h"
 #include "contaElementos.h"
 #include "isFull.h"
+#include "removeValue.h"

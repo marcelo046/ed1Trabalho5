@@ -19,3 +19,5 @@
 #include "contaElementos.h"
 #include "isFull.h"
 #include "removeValue.h"
+#include "verificaBalanceada.h"
+#include "balanceTree.h"

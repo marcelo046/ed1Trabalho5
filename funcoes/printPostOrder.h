@@ -1,6 +1,8 @@
 void printPostOrder(tree *arvore)
 {
-  if(arvore != NULL)
+  if(arvore == NULL)
+    ;
+  else
   {
     printPostOrder(arvore->left);
     printPostOrder(arvore->right);

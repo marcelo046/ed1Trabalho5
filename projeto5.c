@@ -84,7 +84,9 @@ int main() {
         break;
       case 5:
         h = getHeight(arvore);
-        printf("A altura da arvore e %d",h);
+        printf("A altura da arvore e %d\n",h);
+        scanf("%c", &lixo);
+        pausar();
         break;
       case 6:
         leValor(&valor);
@@ -101,14 +103,19 @@ int main() {
         pausar();
         break;
       case 9:
-        printf("essa eh a arvore\n\n");
         printPostOrder(arvore);
         scanf("%c", &lixo);
         pausar();
         break;
       case 10:
-        //if(!verificaBalanceada(arvore)) // Retorna um int, 0 = nao balanceada, 1 = balanceada
-          //balanceTree(arvore);
+        if(!verificaBalanceada(arvore)){ // Retorna um int, 0 = nao balanceada, 1 = balanceada
+          printf("Ela n esta balanceada\n");
+          balanceTree(arvore);
+        }
+        else
+          printf("Ela esta balanceada\n");
+        scanf("%c", &lixo);
+        pausar();
         break;
       case 0:
         arvore = freeArvore(arvore);

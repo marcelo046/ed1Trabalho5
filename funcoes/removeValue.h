@@ -52,23 +52,14 @@ tree * removeValue(tree * arvore, int valor) {
   }
   //caso o No tiver 2 filhos
   if (aux->left != NULL && aux->right != NULL) {
-    //a) Vai para a direita
     folha = aux->right;
-
-    //b) Vai para esquerda
     while (folha->left == NULL || folha->right == NULL) {
       folha = aux->left;
     }
-
-    //i) no_remocao.valor = no.valor
     aux->value = folha->value;
-
-    //ii) remover_folha(no)
     arvore = removeValue(arvore, folha->value);
     printf("removido do meio\n");
     pausar();
   }
-  printf("antes de retornar\n");
-  pausar();
   return arvore;
 }

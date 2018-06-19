@@ -5,3 +5,6 @@ sabendo o ultimo nivel, vc sabe quantos nos tem nele(2 elevado a (N-1)), e quant
 aquela ideia top
 
 colocar todos os valores da arvore em um vetor(quando for null colocar 0) e depois fazer o print a partir do vetor
+
+
+            

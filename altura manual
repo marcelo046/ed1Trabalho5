@@ -33,6 +33,33 @@ bst3			   39
                                                 
                                                 
                                                 
+bst1 teste                                                
+                                                
+                                                
+                                                
+                       x                        eP = 21,eE = 47 
+           /                       \                   
+           x                       x            eP = 9, eE = 23     
+     /           \           /           \             
+     x           x           x           x      eP = 3, eE = 11       
+  /     \     /     \     /     \     /     \              
+  x     x     x     x     x     x     x     x   eP = 0, eE = 5
+
+
+
+
+                x                   eP = 14,eE = 31    
+        /               \                    
+        x               x           eP = 6,eE = 15     
+    /       \       /       \                
+    x       x       x       x       eP = 2,eE = 7     
+  /   \   /   \   /   \   /   \              
+  x   x   x   x   x   x   x   x     eP = 0,eE = 3 
+
+
+
+
+            
                                                                                                 
                 
                                                                     
